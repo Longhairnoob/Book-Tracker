@@ -13,6 +13,7 @@
 		5562647622577743001B3F86 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5562647522577743001B3F86 /* Assets.xcassets */; };
 		5562647922577743001B3F86 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5562647722577743001B3F86 /* LaunchScreen.storyboard */; };
 		5562648422577C13001B3F86 /* OverviewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5562648322577C13001B3F86 /* OverviewController.swift */; };
+		55626486225781B4001B3F86 /* BookCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55626485225781B4001B3F86 /* BookCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		5562647822577743001B3F86 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5562647A22577743001B3F86 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5562648322577C13001B3F86 /* OverviewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OverviewController.swift; sourceTree = "<group>"; };
+		55626485225781B4001B3F86 /* BookCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +64,7 @@
 				5562647222577740001B3F86 /* Main.storyboard */,
 				5562647522577743001B3F86 /* Assets.xcassets */,
 				5562647722577743001B3F86 /* LaunchScreen.storyboard */,
+				55626485225781B4001B3F86 /* BookCell.swift */,
 				5562647A22577743001B3F86 /* Info.plist */,
 			);
 			path = "Book-Tracker";
@@ -147,6 +150,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				55626486225781B4001B3F86 /* BookCell.swift in Sources */,
 				5562647122577740001B3F86 /* ViewController.swift in Sources */,
 				5562648422577C13001B3F86 /* OverviewController.swift in Sources */,
 				5562646F22577740001B3F86 /* AppDelegate.swift in Sources */,
