@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="UKG-9i-k0g">
+    <device id="retina5_9" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Wishlist-->
+        <scene sceneID="AWD-oP-bOB">
+            <objects>
+                <viewController id="XXq-8P-HZb" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="xuH-zI-YDw">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="NJM-yQ-LP8"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Wishlist" image="Wishlist" id="BLD-GQ-I7w"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="e45-Qt-Lph" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="802" y="494"/>
+        </scene>
+        <!--My Books-->
+        <scene sceneID="B1y-sg-nxo">
+            <objects>
+                <viewController id="9IV-Zx-ZNf" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="NHf-8S-Hum">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="0pO-uN-8bL">
+                                <rect key="frame" x="0.0" y="44" width="375" height="685"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="Ejl-bD-6wi">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Ejl-bD-6wi" id="Vbh-k4-t4a">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.666666666666664"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="bNU-gZ-0hf"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="My Books" image="Bookicon" id="Wlu-1G-mNt"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="y7N-pL-79v" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="802.39999999999998" y="-213.54679802955667"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="M8f-J3-d6F">
+            <objects>
+                <tabBarController id="UKG-9i-k0g" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="xRX-ku-aJZ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="selectedImageTintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="9IV-Zx-ZNf" kind="relationship" relationship="viewControllers" id="o4n-ig-ZDS"/>
+                        <segue destination="XXq-8P-HZb" kind="relationship" relationship="viewControllers" id="N18-IU-0PE"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mkF-3F-fCp" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-148" y="113"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Bookicon" width="24" height="24"/>
+        <image name="Wishlist" width="28" height="32"/>
+    </resources>
+</document>
