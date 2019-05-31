@@ -2,6 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:Book-Tracker.xcodeproj">
+      location = "group:/Users/andersberntsen/Documents/Book-Tracker/Book-Tracker/Book-Tracker/GoogleService-Info.plist">
+   </FileRef>
+   <FileRef
+      location = "self:">
    </FileRef>
 </Workspace>
